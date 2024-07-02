@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container {
+    width: 76%;
+    margin-inline: auto;
+    max-width: 1920px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+section {
+    padding: 10rem 0;
+    background: linear-gradient(to bottom right, #e31a7f, #ff6f61);
+    transition: all 1000ms ease;
+    height: 100%;
+}
+
+section:nth-child(even) {
+    background: rgb(255, 255, 255);
+}
+
+section > h2 {
+    text-align: center;
+}
+
+section > p {
+    text-align: center;
+    margin: 0.5rem auto 4rem;
+    width: 40%;
+}
+
+header {
+    background: linear-gradient(to bottom right, #e31a7f, #ff6f61);
+    transition: all 500ms ease;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.headerContainer {
+    height: 100%;
+    width: 50%;
+    margin: 0 auto 4rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.headerContainer ul {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.headerContainer ul li {
+    text-decoration: none;
+    list-style: none;
+    width: 20%;
+}
+
+.headerContainer ul li span {
+    display: block;
+    font-size: 0.6rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .headerContainer {
+        width: 75%;
+    }
+
+    .headerContainer ul {
+      margin-top: 3%;
+    }
+
+    .headerContainer ul li {
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .headerContainer {
+        width: 90%;
+        height: 250px;
+
+    }
+
+    .headerContainer ul {
+        flex-direction: column;
+    }
+
+    .headerContainer ul {
+        padding-top: 2%;
+    }
+
+    .headerContainer ul li {
+        width: 100%;
+        padding: 0.5rem 0;
+        font-size: 0.8rem;
+    }
+
+    .headerContainer ul li span {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        height: auto;
+    }
+
+    .headerContainer {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .headerContainer ul {
+        padding-top: 1%;
+    }
+
+    .headerContainer ul li {
+        width: 100%;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+    }
+
+    .headerContainer ul li span {
+        font-size: 1rem;
+    }
+
+   
+}
+
+
+
+.landContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(to bottom right, #e31a7f, #ff6f61);
+    padding: 4rem 2rem; 
+}
+
+.landContainer h2 {
+    font-size: 6rem;
+    color: white;
+}
+
+.landContainer h1 {
+    font-weight: light;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#cv {
+    height: 70px;
+    width: 200px;
+    border: white solid 4px;
+    margin-top: 2%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    color: white; 
+    transition: all 500ms ease-in-out;
+}
+
+#cv a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+}
+
+#cv:hover {
+    color: black;
+    background-color: white;
+    transform: translateY(-0.5rem);
+    border-color: #e31a7f;
+}
+
+#cv a:hover{
+    color: #e31a7f;
+    border-color: #e31a7f;
+}
+
+@media only screen and (max-width: 1024px) {
+    #cv  {
+        margin-top: 10%;
+    }
+
+    .landContainer h2 {
+        font-size: 4rem;
+    }
+
+    .landContainer h1 {
+        font-size: 1.2rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .landContainer{
+        margin-top: 80%;
+    }
+
+    .landContainer h1 {
+        font-size: 1rem;
+    }
+
+    #cv{
+        margin-top: 15%;
+    }
+
+    #cv a{
+    
+        text-align: center;
+        margin-bottom: 25%;
+        font-size: 0.8rem;
+
+    }
+
+    .landContainer h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+    .landContainer h2 {
+        font-size: 2rem;
+    }
+
+    .landContainer h1 {
+        font-size: 0.9rem;
+    }
+
+    #cv {
+        height: 45px;
+        width: 130px;
+        line-height: 45px;
+    }
+}
+
+
+.aboutContainer {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 0;
+}
+
+.about {
+    padding: 10rem 0 0;
+}
+
+.words ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(141, 141, 140);
+}
+
+.words h1 {
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .aboutContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .aboutContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    img{
+        height: 250px;
+         width: 100%;
+    }
+}
+
+
+
+
+footer {
+    background: linear-gradient(to bottom right, #e31a7f, #ff6f61);
+    transition: all 1000ms ease;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    list-style: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+footer ul li :hover{
+    transform: translateY(-0.5rem);
+    transition: all 500ms ease-in-out;
+    color: blue;
+}
+
+footer p {
+    color: white;
+    padding-top: 10px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+  
+
+}
+
+@media only screen and (max-width: 600px) {
+
+   footer{
+    margin-top: 3%;
+    display: flex;
+    
+
+   }
+
+   footer ul{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: -70px;
+    
+   }
+
+   footer ul li a {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+}
+
